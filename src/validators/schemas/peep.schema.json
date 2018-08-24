@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Peep",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "string",
+      "description": "PeepethEvent address"
+    },
+    "blockNumber": {
+      "type": "number",
+      "description": "Block ID on which the PeepethEvent is located"
+    },
+    "transactionHash": {
+      "type": "string"
+    },
+    "transactionIndex": {
+      "type": "number"
+    },
+    "blockHash": {
+      "type": "string",
+      "description": "Hash identified of the block on which the Peep is located"
+    },
+    "logIndex": {
+      "type": "number"
+    },
+    "removed": {
+      "type": "boolean",
+      "description": "Existence status"
+    },
+    "id": {
+      "type": "string",
+      "description": "PeepethEvent identifier"
+    },
+    "returnValues": {
+      "type": "object"
+    },
+    "event": {
+      "type": "string",
+      "description": "PeepethEvent type"
+    },
+    "signature": {
+      "type": "string",
+      "description": "Hash signature of PeepethEvent data"
+    },
+    "raw": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "Data prefix (0x for hex, 0b for binary)"
+        },
+        "topics": {
+          "type": "array"
+        }
+      }
+    }
+  }
+}

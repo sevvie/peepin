@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "PeepethEvent Decorations",
+  "type": "object",
+  "properties": {
+    "info": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "description": "User's Location identifier"
+    },
+    "realName": {
+      "type": "string",
+      "description": "User's Real Name field"
+    },
+    "website": {
+      "type": "string",
+      "description": "User's website URL field"
+    },
+    "avatarUrl": {
+      "type": "string",
+      "description": "IPFS path to User's avatar"
+    },
+    "backgroundUrl": {
+      "type": "string",
+      "description": "IPFS path to User's header background"
+    },
+    "messageToWorld": {
+      "type": "string",
+      "description": "User's message-to-world field"
+    },
+    "untrustedTimestamp": {
+      "type": "number",
+      "description": "UNIX Timestamp representing last update of User's profile"
+    },
+    "_name": {
+      "type": "string",
+      "description": "User's display name"
+    },
+    "avatarIPFSHash": {
+      "type": "string",
+      "description": "IPFS hash to User's avatar"
+    },
+    "avatarBackgroundHash": {
+      "type": "string",
+      "description": "IPFS hash to User's header background"
+    }
+  }
+}
